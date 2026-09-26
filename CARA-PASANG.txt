@@ -1,12 +1,18 @@
 Cara pasang (Chrome):
 
-1. Di repo ini klik Code lalu Download ZIP, extract foldernya
-2. Buka chrome://extensions
-3. Nyalakan Developer mode
-4. Klik Load unpacked
-5. Pilih folder hasil extract
+1. Buka chrome://extensions
+2. Nyalakan "Developer mode" (pojok kanan atas)
+3. Klik "Load unpacked"
+4. Pilih folder fb-akses-helper ini
 
-Setelah ada update: Download ZIP lagi, extract menimpa folder yang sama, klik Reload di chrome://extensions, lalu refresh tab Facebook.
+Cara pakai:
 
-Panel FB Helper muncul di kiri bawah saat buka facebook.com.
-UID dan catatan hanya tersimpan di Chrome ini, tidak di GitHub.
+1. Login Facebook
+2. Buka: https://www.facebook.com/settings/?tab=profile_access
+3. Klik ikon ekstensi "FB Akses Helper"
+4. Klik "1. Klik Tambahkan Baru (atas)"
+5. Setelah dialog muncul, klik "2. Klik Berikutnya"
+
+Setelah update kode: di chrome://extensions klik Reload pada FB Akses Helper, lalu refresh tab Facebook.
+
+Kalau tombol tidak bereaksi, refresh halaman Facebook dulu, lalu klik lagi.
