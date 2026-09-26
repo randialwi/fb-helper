@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "FB Helper",
+  "version": "0.9.7",
+  "description": "Membantu klik bertahap di halaman akses Facebook.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://facebook.com/*",
+    "https://web.facebook.com/*",
+    "https://randialwi.github.io/*"
+  ],
+  "action": { "default_popup": "popup/popup.html" },
+  "content_scripts": [{
+    "matches": ["https://www.facebook.com/*", "https://facebook.com/*", "https://web.facebook.com/*"],
+    "js": ["content/content.js"],
+    "run_at": "document_idle"
+  }]
+}
