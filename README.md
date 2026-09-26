@@ -1,14 +1,16 @@
 # FB Helper
 
-Versi **0.9.7**.
+Ekstensi Chrome (Manifest V3) versi 0.9.7. Panel mengambang di Facebook untuk langkah undang akses, isi negara, isi blok komen, dan shortcut.
 
 ## Pasang
-1. Code → Download ZIP
-2. Extract
-3. chrome://extensions → Developer mode → Load unpacked
-4. Pilih folder yang ada manifest.json
 
-## Update
-Download ZIP lagi, timpa folder, klik Reload di chrome://extensions, refresh Facebook.
+1. **Code → Download ZIP**, lalu extract
+2. Buka `chrome://extensions`
+3. Nyalakan **Developer mode**
+4. **Load unpacked** dan pilih folder hasil extract
 
-https://github.com/randialwi/fb-helper
+Update: Download ZIP lagi, extract ke folder yang sama, klik **Reload** di `chrome://extensions`, refresh tab Facebook. Chrome tidak auto-update ekstensi unpacked.
+
+UID dan catatan hanya di Chrome kamu. Jangan taruh UID di repo ini.
+
+List negara dan blok komen: https://randialwi.github.io/tier1/

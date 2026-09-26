@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      width: 300px;
+      margin: 0;
+      padding: 12px;
+      background: #f0f2f5;
+      color: #050505;
+    }
+    h1 { font-size: 14px; margin: 0 0 8px; }
+    p { font-size: 12px; margin: 0 0 10px; color: #65676b; }
+    label { font-size: 12px; display: block; margin-bottom: 4px; }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ccd0d5;
+      border-radius: 8px;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 8px;
+      padding: 9px;
+      background: #1877f2;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 6px;
+    }
+    button:hover { background: #166fe5; }
+    #status { margin-top: 10px; font-size: 12px; min-height: 16px; }
+  </style>
+</head>
+<body>
+  <h1>FB Helper</h1>
+  <p>UID diisi di sini. Kata sandi Facebook tetap diketik manual di dialog Konfirmasi.</p>
+  <label for="uid">UID Facebook</label>
+  <input id="uid" type="text" placeholder="UID Facebook" />
+  <button id="step1">1. Tambahkan Baru + Berikutnya</button>
+  <button id="step3">3. Isi UID + klik nama</button>
+  <button id="step4">4. Kontrol penuh + Berikan akses</button>
+  <button id="step5">5. Konfirmasi (setelah isi sandi)</button>
+  <button id="step6">6. Ganti halaman (paling bawah)</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

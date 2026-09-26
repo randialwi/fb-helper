@@ -1,0 +1,12 @@
+Cara pasang (Chrome):
+
+1. Di repo ini klik Code lalu Download ZIP, extract foldernya
+2. Buka chrome://extensions
+3. Nyalakan Developer mode
+4. Klik Load unpacked
+5. Pilih folder hasil extract
+
+Setelah ada update: Download ZIP lagi, extract menimpa folder yang sama, klik Reload di chrome://extensions, lalu refresh tab Facebook.
+
+Panel FB Helper muncul di kiri bawah saat buka facebook.com.
+UID dan catatan hanya tersimpan di Chrome ini, tidak di GitHub.
