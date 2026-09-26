@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; background: #fff; color: #050505; }
+    .box { padding: 12px; }
+    h1 { font-size: 15px; margin: 0 28px 8px 0; }
+    p, label, .st { font-size: 12px; color: #65676b; margin: 0 0 4px; }
+    input, textarea { width: 100%; padding: 6px; border: 1px solid #ccd0d5; border-radius: 6px; margin: 2px 0 6px; font: inherit; font-size: 12px; }
+    button { width: 100%; margin-top: 4px; border: 0; border-radius: 7px; padding: 8px; background: #1877f2; color: #fff; font-weight: 600; cursor: pointer; font-size: 12px; }
+    button:hover { background: #166fe5; }
+    .hr { border: 0; border-top: 1px solid #e4e6eb; margin: 8px 0 4px; }
+    .row { display: flex; gap: 6px; }
+    .row button { flex: 1; }
+    button.sc, #togNotes, #ncopy, #min { background: #e4e6eb; color: #050505; }
+    button.sc:hover, #togNotes:hover, #ncopy:hover, #min:hover { background: #d8dadf; }
+    button.sc { font-size: 11px; padding: 6px 4px; }
+    #togNotes { text-align: left; }
+    .tabs { display: flex; gap: 4px; margin: 6px 0 4px; }
+    .tabs button { flex: 1; background: #e4e6eb; color: #050505; padding: 5px 2px; font-size: 10px; }
+    .tabs button.on { background: #1877f2; color: #fff; }
+    #nbody { min-height: 72px; resize: vertical; }
+    .st { min-height: 16px; margin-top: 8px; }
+    #min { position: absolute; top: 8px; right: 8px; width: auto; padding: 2px 8px; margin: 0; }
+    .hint { font-size: 11px; color: #65676b; margin: 0 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <button id="min" type="button">sembunyi</button>
+    <h1>FB Helper</h1>
+    <p class="hint">Tetap terbuka saat pindah halaman.</p>
+    <label>UID 1</label><input id="uid1" type="text" />
+    <label>UID 2</label><input id="uid2" type="text" />
+    <p id="now">Aktif: UID 1</p>
+    <button data-s="1" type="button">1. Tambahkan Baru + Berikutnya</button>
+    <button data-s="3" type="button">3. Isi UID aktif + klik nama</button>
+    <button data-s="4" type="button">4. Kontrol penuh + Berikan akses</button>
+    <button data-s="5" type="button">5. Konfirmasi</button>
+    <button data-s="6" type="button">6. Ganti halaman (paling bawah)</button>
+    <button id="isiNegara" type="button">Isi negara (list publik)</button>
+    <button id="isiKomen" type="button">Isi blok komen (list publik)</button>
+    <hr class="hr" />
+    <div class="row">
+      <button class="sc" type="button" data-url="https://www.facebook.com/help/delete_account">Hapus halaman</button>
+      <button class="sc" type="button" data-url="https://www.facebook.com/settings/?tab=profile_access">Undang admin</button>
+    </div>
+    <div class="row">
+      <button class="sc" type="button" data-url="https://www.facebook.com/pages/?category=invites&ref=bookmarks">Cek undangan</button>
+      <button class="sc" type="button" data-url="https://www.facebook.com/profile.php?id=&sk=reels_tab">Cek reels</button>
+    </div>
+    <div class="row">
+      <button class="sc" type="button" data-url="https://www.facebook.com/settings/?tab=profile_quality&show_dialog=0&ref=account_status&referrer=three_dot_menu_settings">Cek rekomendasi</button>
+      <button class="sc" type="button" data-url="https://www.facebook.com/settings/reactivation">Cek nonaktif</button>
+    </div>
+    <div class="row">
+      <button class="sc" type="button" data-url="https://www.facebook.com/settings/?tab=applications">Acc tester</button>
+      <button class="sc" type="button" data-url="https://www.facebook.com/profile.php">My profile</button>
+    </div>
+    <div class="row">
+      <button class="sc" type="button" data-url="https://www.facebook.com/settings/?tab=followers_and_public_content">Blok negara</button>
+      <button class="sc" type="button" data-url="https://randialwi.github.io/tier1/">Negara & komen</button>
+    </div>
+    <button id="togNotes" type="button">Catatan ▸</button>
+    <div id="notesBox" style="display:none">
+      <div class="tabs">
+        <button data-n="0" class="on" type="button">Negara</button>
+        <button data-n="1" type="button">Blok komen</button>
+        <button data-n="2" type="button">Lainnya</button>
+      </div>
+      <input id="ntitle" type="text" placeholder="Judul paket" />
+      <textarea id="nbody" placeholder="Isi catatan / keywords"></textarea>
+      <button id="ncopy" type="button">Salin</button>
+    </div>
+    <div class="st" id="st"></div>
+  </div>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
