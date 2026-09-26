@@ -928,13 +928,10 @@
           <button class="sc" data-url="https://www.facebook.com/settings/?tab=applications">Acc tester</button>
           <button class="sc" data-url="https://www.facebook.com/profile.php">My profile</button>
         </div>
-        <div class="row">
-          <button class="sc" data-url="https://www.facebook.com/settings/?tab=followers_and_public_content">Blok negara</button>
-          <button class="sc" data-url="https://randialwi.github.io/tier1/#negara">List negara</button>
-        </div>
-        <div class="row">
-          <button class="sc" data-url="https://randialwi.github.io/tier1/#komen">List blok komen</button>
-        </div>
+       <div class="row">
+  <button class="sc" data-url="https://www.facebook.com/settings/?tab=followers_and_public_content">Blok negara</button>
+  <button class="sc" data-url="https://randialwi.github.io/tier1/">Negara & komen</button>
+</div>
         <button id="togNotes">Catatan ▸</button>
         <div id="notesBox" style="display:none">
           <div class="tabs">
